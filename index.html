@@ -40,6 +40,7 @@
         <label for="Pass" class="form-label">PassWord</label>
         <input type="password" class="form-control"id="Pass">
         <p id="pass_error"></p>
+        <p id="pass_err"></p>
       </div>
       <div class="mb-3">
         <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
@@ -47,11 +48,12 @@
       </div>
       <div>
         <label for="validate">What is 5 + 1?*:</label> 
+        <p id="input_error"></p>
         <input type="text" name="validate" id="validate">
       </div>
       <div class ="mb3">
         <input type="button" onclick="validateForm()" value="Save" class="btn btn-light">
-        <input type="submit" value="Submit">
+        <button type="submit" >Submit</button>
         <input type="reset">
       </div>
     </div>
