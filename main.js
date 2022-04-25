@@ -10,8 +10,9 @@ function validateForm() {
   const address_error = document.getElementById("address_error");
   const phone_error = document.getElementById("phone_error");
   const email_error = document.getElementById("email_error");
+  const email_err = document.getElementById("email_err");
   const pass_error = document.getElementById("pass_error");
-  const pass_er = document.getElementById("pass_err");
+  const pass_err = document.getElementById("pass_err");
   const input_error = document.getElementById("input_error");
  if(!fname){
    fname_error.innerHTML= "Khong duoc de trong first name";
@@ -57,9 +58,18 @@ function validateForm() {
  if(fname.length>30||lname.length>30||phone.length>30||email.length>30||pass.length>30||address.length>30){
    input_error.innerHTML="Truong nhap vao khong duoc lon hon 30 ky tu";
  }else{
-input_error.innerHTML ="";
+   input_error.innerHTML ="";
  }
-}
+ let filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/; 
+   if (!filter.test(email)) { 
+            email_err.innerHTML="Email khong hop le";
+            return false; 
+   }
+   else{ 
+     email_err.innerHTML="";
+   } 
+} 
+
 
 
 

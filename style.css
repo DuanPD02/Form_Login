@@ -5,3 +5,16 @@
 p{
     color: red;
 }
+#mb2.mb3 { 
+    margin-right: 200px;
+}
+input.btn.btn-light{
+    margin-right: 40px;
+}
+#button{
+    padding-right: 40px;
+}
+.btn_s{
+    margin-right: 40px;
+
+}

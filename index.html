@@ -26,6 +26,15 @@
         <input type="text" class="form-control"id="Address">
         <p id="address_error"></p>
       </div>
+      <div class="mb3">
+        <h6>Giới Tính</h6>
+        <input type="radio" id="Nam" name="fav_language" value="Nam">
+        <label for="Nam">Nam</label><br>
+        <input type="radio" id ="Nu" name="fav_language" value="Nu">
+        <label for="Nu">Nu</label><br>
+        <input type="radio" id="Khac" name="fav_language" value="Khac">
+        <label for="Khac">Khac</label><br>
+      </div>
       <div class="mb3"> 
         <label for="Phone" class="form-label">Phone</label>
         <input type="number" class="form-control"id="Phone">
@@ -35,6 +44,7 @@
         <label for="exampleFormControlInput1" class="form-label">Email address</label>
         <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
         <p id="email_error"></p>
+        <p id ="email_err"></p>
       </div>
       <div>
         <label for="Pass" class="form-label">PassWord</label>
@@ -45,21 +55,19 @@
       <div class="mb-3">
         <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
         <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-      </div>
-      <div>
-        <label for="validate">What is 5 + 1?*:</label> 
         <p id="input_error"></p>
-        <input type="text" name="validate" id="validate">
       </div>
+      <div id = "mb2">
       <div class ="mb3">
         <input type="button" onclick="validateForm()" value="Save" class="btn btn-light">
-        <button type="submit" >Submit</button>
+        <button type="submit" class="btn_s" >Submit</button>
         <input type="reset">
       </div>
     </div>
+    </div>
   </form>
-  <script src ="./main.js"></script>
+  <script src ="./main.js"></script> 
 </body>
 </html>
-  
+
   
